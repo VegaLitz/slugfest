@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLUGFAST — DBD Tournament Bracket</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 id="siteTitle">SLUGFAST</h1>
+  <p>Dead by Daylight Tournament Bracket — Live</p>
+  <p id="connStatus" class="status">connecting…</p>
+</header>
+
+<div class="toolbar">
+  <button id="editToggle">✏️ Edit Mode</button>
+  <button id="teamCountBtn">🔢 Number of teams</button>
+  <button id="shareBtn">🔗 Copy link</button>
+</div>
+
+<div id="editBanner">
+  EDIT MODE — changes you make (names, pictures, members, winners, team count) save instantly and everyone
+  viewing the link sees them live.
+</div>
+
+<div class="bracket-wrap">
+  <div class="bracket" id="bracket"></div>
+</div>
+
+<footer>
+  Built for the SLUGFAST tournament • Hosted free on GitHub Pages + Firebase
+</footer>
+
+<!-- Team / member modal -->
+<div class="modal-overlay" id="teamModal">
+  <div class="modal">
+    <div class="modal-header">
+      <img id="modalPfp" src="" alt="">
+      <h2 id="modalName">Team</h2>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div id="modalMembers"></div>
+  </div>
+</div>
+
+<!-- Edit team modal -->
+<div class="modal-overlay" id="editModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Edit Team</h2>
+      <button class="modal-close" id="editModalClose">✕</button>
+    </div>
+    <div id="editModalBody"></div>
+    <div class="toolbar" style="margin-top:14px;">
+      <button class="primary" id="editSaveBtn">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- Team count modal -->
+<div class="modal-overlay" id="countModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Number of teams</h2>
+      <button class="modal-close" id="countModalClose">✕</button>
+    </div>
+    <p style="color:var(--text-dim); font-size:0.85rem;">
+      Choose how many teams are in the tournament. Existing team names/members/pfps are kept where possible.
+      Shrinking the bracket will remove teams from the end of the list.
+    </p>
+    <div class="toolbar" id="countOptions"></div>
+  </div>
+</div>
+
+<!-- Edit-code prompt modal -->
+<div class="modal-overlay" id="codeModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Enter edit code</h2>
+      <button class="modal-close" id="codeModalClose">✕</button>
+    </div>
+    <input class="edit-field" id="codeInput" type="password" placeholder="Edit code">
+    <div class="toolbar" style="margin-top:14px;">
+      <button class="primary" id="codeSubmitBtn">Unlock Edit Mode</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "tournamentName": "SLUGFAST",
+  "teamCount": 8,
+  "teams": [
+    { "id": "t1", "name": "Team 1", "pfp": "", "members": [{ "name": "Player 1", "pfp": "", "role": "Killer" }, { "name": "Player 2", "pfp": "", "role": "Survivor" }, { "name": "Player 3", "pfp": "", "role": "Survivor" }, { "name": "Player 4", "pfp": "", "role": "Survivor" }] },
+    { "id": "t2", "name": "Team 2", "pfp": "", "members": [{ "name": "Player 1", "pfp": "", "role": "Killer" }, { "name": "Player 2", "pfp": "", "role": "Survivor" }, { "name": "Player 3", "pfp": "", "role": "Survivor" }, { "name": "Player 4", "pfp": "", "role": "Survivor" }] },
+    { "id": "t3", "name": "Team 3", "pfp": "", "members": [{ "name": "Player 1", "pfp": "", "role": "Killer" }, { "name": "Player 2", "pfp": "", "role": "Survivor" }, { "name": "Player 3", "pfp": "", "role": "Survivor" }, { "name": "Player 4", "pfp": "", "role": "Survivor" }] },
+    { "id": "t4", "name": "Team 4", "pfp": "", "members": [{ "name": "Player 1", "pfp": "", "role": "Killer" }, { "name": "Player 2", "pfp": "", "role": "Survivor" }, { "name": "Player 3", "pfp": "", "role": "Survivor" }, { "name": "Player 4", "pfp": "", "role": "Survivor" }] },
+    { "id": "t5", "name": "Team 5", "pfp": "", "members": [{ "name": "Player 1", "pfp": "", "role": "Killer" }, { "name": "Player 2", "pfp": "", "role": "Survivor" }, { "name": "Player 3", "pfp": "", "role": "Survivor" }, { "name": "Player 4", "pfp": "", "role": "Survivor" }] },
+    { "id": "t6", "name": "Team 6", "pfp": "", "members": [{ "name": "Player 1", "pfp": "", "role": "Killer" }, { "name": "Player 2", "pfp": "", "role": "Survivor" }, { "name": "Player 3", "pfp": "", "role": "Survivor" }, { "name": "Player 4", "pfp": "", "role": "Survivor" }] },
+    { "id": "t7", "name": "Team 7", "pfp": "", "members": [{ "name": "Player 1", "pfp": "", "role": "Killer" }, { "name": "Player 2", "pfp": "", "role": "Survivor" }, { "name": "Player 3", "pfp": "", "role": "Survivor" }, { "name": "Player 4", "pfp": "", "role": "Survivor" }] },
+    { "id": "t8", "name": "Team 8", "pfp": "", "members": [{ "name": "Player 1", "pfp": "", "role": "Killer" }, { "name": "Player 2", "pfp": "", "role": "Survivor" }, { "name": "Player 3", "pfp": "", "role": "Survivor" }, { "name": "Player 4", "pfp": "", "role": "Survivor" }] }
+  ],
+  "bracket": {
+    "rounds": [
+      { "name": "Quarterfinals", "matches": [
+        { "id": "m1", "team1": "t1", "team2": "t2", "winner": null },
+        { "id": "m2", "team1": "t3", "team2": "t4", "winner": null },
+        { "id": "m3", "team1": "t5", "team2": "t6", "winner": null },
+        { "id": "m4", "team1": "t7", "team2": "t8", "winner": null }
+      ]},
+      { "name": "Semifinals", "matches": [
+        { "id": "m5", "team1": null, "team2": null, "winner": null },
+        { "id": "m6", "team1": null, "team2": null, "winner": null }
+      ]},
+      { "name": "Final", "matches": [
+        { "id": "m7", "team1": null, "team2": null, "winner": null }
+      ]}
+    ]
+  }
+}
